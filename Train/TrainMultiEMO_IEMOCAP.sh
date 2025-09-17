@@ -1,0 +1,1 @@
+python Train/TrainMultiEMO.py  --dataset 'IEMOCAP' --num_layer 5 --batch_size 64 --SWFC_loss_param 0.8 --HGR_loss_param 0.2 --CE_loss_param 1.0 --sample_weight_param 0.8 --focus_param 2.1 --temp_param 0.8 --learning_rate 0.0001 --num_epochs 150 --weight_decay 0.00001 --dropout_rate 0.3 --num_heads 8 --multi_attn_flag True >&1 | tee Log/IEMOCAP/IEMOCAP-SWFC.put
